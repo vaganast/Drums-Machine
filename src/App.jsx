@@ -71,8 +71,8 @@ const playMusic = (music) => {
       <div id="display"><p>Lets play drums you pressed {pressedKey}</p></div>
         <div className='drum-pads'>
           {pads.map((pad) => 
-          <div className='drum-pad' 
-                tabIndex={0}            
+          <div className={`drum-pad${pressedKey === pad.text ? ' pressed': ''}`} 
+                tabIndex={0}       
                 key={pad.keyCode} 
                 id={pad.src} 
                 onClick={()=>{playMusic(pad.text)}}

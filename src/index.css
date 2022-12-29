@@ -38,9 +38,11 @@ p {
   color: white;
   box-shadow: black 3px 3px 5px;  
 }
-.drum-pad:visited {
-  background-color: rgba(253, 0, 0, 0.385);  
-}
+
 .drum-pad:active { 
   background-color: rgba(253, 0, 0, 0.385);  
+}
+
+.pressed {
+  background-color: rgba(253, 0, 0, 0.385);
 }
